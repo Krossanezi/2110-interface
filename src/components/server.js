@@ -5,7 +5,7 @@ export default {
     }
   }
 const { MongoClient, ServerApiVersion } = require('mongodb');
-const uri = "mongodb+srv://kauarossanezi:<kaua@Rossanezi102030>@kauas.qnb3l.mongodb.net/?retryWrites=true&w=majority&appName=kauas";
+const uri = "mongodb+srv://kauarossanezi:kaua@Rossanezi102030@kauas.qnb3l.mongodb.net/?retryWrites=true&w=majority&appName=kauas";
 
 // Create a MongoClient with a MongoClientOptions object to set the Stable API version
 const client = new MongoClient(uri, {
@@ -35,7 +35,7 @@ const { MongoClient } = require('mongodb');
 let database, collection;
 
 async function initDatabase() {
-    const uri = "mongodb+srv://<kauas>:<kaua@Rossanezi102030>@kauas.qnb3l.mongodb.net/myFirstDatabase?retryWrites=true&w=majority";
+    const uri = "mongodb+srv://kauas:kaua@Rossanezi102030@kauas.qnb3l.mongodb.net/myFirstDatabase?retryWrites=true&w=majority";
     const client = new MongoClient(uri, { useNewUrlParser: true, useUnifiedTopology: true });
 
     try {
@@ -77,8 +77,7 @@ require('dotenv').config();
 
 const { MongoClient } = require('mongodb');
 
-const uri = process.env.MONGO_URI;
-
 // Restante do código para conexão e operações
+
 
 
